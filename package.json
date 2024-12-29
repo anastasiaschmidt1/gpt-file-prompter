@@ -1,0 +1,23 @@
+{
+  "name": "gpt-file-prompter",
+  "version": "1.0.0",
+  "description": "A helper for generating ChatGPT prompts with file uploads.",
+  "main": "server.js",
+  "bin": {
+    "gpt-file-prompter": "./server.js"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "type": "module",
+  "keywords": [
+    "chatgpt",
+    "prompt",
+    "file-upload"
+  ],
+  "author": "Anastasia Schmidt",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}

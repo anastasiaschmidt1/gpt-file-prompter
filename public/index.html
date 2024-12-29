@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Minimal ChatGPT helper for uploading files</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+<main>
+    <div class="container">
+        <h1>Minimal ChatGPT helper for uploading files</h1>
+
+        <!-- Prompt Input -->
+        <section class="form-section">
+            <label for="promptInput" class="form-label">Your Prompt:</label>
+            <textarea
+                    id="promptInput"
+                    rows="3"
+                    class="form-field"
+                    placeholder="Describe your project, tech stack, and desired output (e.g., frontend design, backend logic, etc.).">
+            </textarea>
+        </section>
+
+        <!-- File Upload -->
+        <section class="form-section">
+            <label for="fileInput" class="form-label">Attach Files:</label>
+            <input type="file" id="fileInput" class="form-field" multiple />
+        </section>
+
+        <!-- Uploaded File List -->
+        <ul id="list__files" class="list list--files"></ul>
+
+        <!-- Generated Prompt -->
+        <section class="form-section">
+            <label for="generatedPrompt" class="form-label">Generated Prompt:</label>
+            <div class="textarea-container">
+                <textarea id="generatedPrompt" rows="8" class="form-field"></textarea>
+                <button id="copyButton" class="icon-btn" title="Copy Prompt">
+                    <span class="material-icons">content_copy</span>
+                </button>
+            </div>
+        </section>
+
+        <!-- Token Counter -->
+        <div id="tokenCounter" class="token-counter">Tokens: 0</div>
+    </div>
+</main>
+
+<script type="module" src="js/app.js"></script>
+</body>
+</html>
